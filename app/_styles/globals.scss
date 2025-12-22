@@ -1,0 +1,24 @@
+@use "@/app/_styles/variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-mobile) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $slate300;
+  font-family: $outfit;
+}

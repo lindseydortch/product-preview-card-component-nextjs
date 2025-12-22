@@ -1,0 +1,32 @@
+// COLORS
+$slate900: #1f314f;
+$slate500: #68778d;
+$slate300: #d5e1ef;
+$white: #ffffff;
+
+// FONTS
+$outfit: "Outfit", system-ui, sans-serif;
+
+// SPACING
+$spacing-lg: 4rem;
+$spacing-med: 2.4rem;
+$spacing-sm: 1.6rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-mobile: 23.4375em; // 375px
+
+// MIXINS
+@mixin textPresetBold() {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@mixin textPresetRegular() {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.02rem;
+  text-align: center;
+}

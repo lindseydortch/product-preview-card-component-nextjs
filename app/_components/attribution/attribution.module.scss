@@ -1,0 +1,18 @@
+@use "@/app/_styles/variables" as *;
+
+.attribution {
+  background-color: $slate900;
+  color: $slate500;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem;
+
+  a {
+    color: $white;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      color: $slate300;
+    }
+  }
+}
