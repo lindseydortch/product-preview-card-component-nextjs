@@ -1,32 +1,56 @@
 // COLORS
-$slate900: #1f314f;
-$slate500: #68778d;
-$slate300: #d5e1ef;
+$black: #1c232b;
+$grey: #6c7289;
+$cream: #f2eae2;
 $white: #ffffff;
+$green500: #3d8168;
+$green700: #1a4032;
 
 // FONTS
-$outfit: "Outfit", system-ui, sans-serif;
+$fraunces: "Fraunces", serif;
+$montserrat: "Montserrat", sans-serif;
 
 // SPACING
-$spacing-lg: 4rem;
+$spacing-xl: 4rem;
+$spacing-lg: 3.2rem;
 $spacing-med: 2.4rem;
 $spacing-sm: 1.6rem;
+$spacing-xs: 0.8rem;
+$spacing-xxs: 0.4rem;
 
 // RESPONSIVE BREAKPOINTS
 $bp-mobile: 23.4375em; // 375px
 
 // MIXINS
-@mixin textPresetBold() {
-  font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 1.2;
-  text-align: center;
+@mixin textPreset(
+  $fontWeight,
+  $fontSize,
+  $lineHeight: 100%,
+  $letterSpacing: 0
+) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
 }
 
-@mixin textPresetRegular() {
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  letter-spacing: 0.02rem;
-  text-align: center;
+@mixin textPreset1() {
+  font-family: $fraunces;
+  @include textPreset(700, 3.2rem);
+}
+
+@mixin textPreset2() {
+  @include textPreset(700, 1.4rem, 110%);
+}
+
+@mixin textPreset3() {
+  @include textPreset(500, 1.4rem, 160%);
+}
+
+@mixin textPreset4() {
+  @include textPreset(500, 1.2rem, 120%, 0.05rem);
+}
+
+@mixin textPreset5() {
+  @include textPreset(500, 1.3rem, 120%);
 }

@@ -1,18 +1,18 @@
 @use "@/app/_styles/variables" as *;
 
 .attribution {
-  background-color: $slate900;
-  color: $slate500;
+  background-color: $green700;
+  color: $cream;
   font-size: 1.1rem;
   text-align: center;
   padding: 1rem;
 
   a {
-    color: $white;
+    color: $green500;
     transition: all 0.3s ease-in;
 
     &:hover {
-      color: $slate300;
+      color: $grey;
     }
   }
 }
