@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of my solution for the Product Preview Card Component Challenge](./public/screenshot.jpg)
+![Screenshot of my solution for the Product Preview Card Component Challenge](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/lindseydortch/product-preview-card-component-nextjs)
+- Live Site URL: [Deployed Site](https://product-preview-card-component-nextjs.netlify.app/)
 
 ## My process
 
