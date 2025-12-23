@@ -1,0 +1,66 @@
+@use "@/app/_styles/variables" as *;
+
+.content {
+  max-width: 30rem;
+  padding: $spacing-lg;
+  background-color: $white;
+
+  @media only screen and (max-width: $bp-mobile) {
+    max-width: 35rem;
+  }
+}
+
+.category {
+  margin-bottom: $spacing-med;
+
+  h2 {
+    text-transform: uppercase;
+    @include textPreset4($grey);
+  }
+}
+
+.item {
+  margin-bottom: $spacing-med;
+
+  h1 {
+    @include textPreset1(_);
+  }
+}
+
+.description {
+  margin-bottom: $spacing-lg;
+
+  p {
+    @include textPreset3($grey);
+  }
+}
+
+.priceBox {
+  margin-bottom: $spacing-lg;
+
+  display: flex;
+  align-items: center;
+  column-gap: $spacing-sm;
+}
+
+.salePrice {
+  display: inline-block;
+  @include textPreset1($green500);
+}
+
+.price {
+  display: inline-block;
+  text-decoration: line-through;
+  @include textPreset5($grey);
+}
+
+.buttons {
+  width: 100%;
+  display: block;
+}
+
+.icon {
+  position: relative;
+  width: 1.8rem;
+  height: 1.8rem;
+}

@@ -1,13 +1,15 @@
 @use "@/app/_styles/variables" as *;
 
 .card {
-  background-color: $white;
-  border-radius: 2rem;
-  padding: $spacing-sm $spacing-sm $spacing-lg $spacing-sm;
-  margin: $spacing-med;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  margin: 8rem $spacing-sm;
 
   display: grid;
-  grid-template-columns: min-content;
-  grid-template-rows: max-content min-content;
-  row-gap: $spacing-med;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (max-width: $bp-mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 34.2rem 1fr;
+  }
 }

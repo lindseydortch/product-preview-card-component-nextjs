@@ -1,0 +1,25 @@
+@use "@/app/_styles/variables" as *;
+
+.button {
+  background-color: $green500;
+  padding: $spacing-sm $spacing-lg;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  transition: 0.3s all ease-in;
+
+  @include textPreset2($white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: $spacing-xs;
+
+  &:hover {
+    background-color: $green700;
+  }
+
+  span svg {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}

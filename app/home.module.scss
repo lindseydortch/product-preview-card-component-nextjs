@@ -3,8 +3,13 @@
 .section {
   width: 100lvw;
   height: 100lvh;
+  background-color: $cream;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: $bp-mobile) {
+    height: max-content;
+  }
 }

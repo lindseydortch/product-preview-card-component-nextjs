@@ -26,31 +26,33 @@ $bp-mobile: 23.4375em; // 375px
   $fontWeight,
   $fontSize,
   $lineHeight: 100%,
-  $letterSpacing: 0
+  $letterSpacing: 0,
+  $color: $black
 ) {
   font-weight: $fontWeight;
   font-size: $fontSize;
   line-height: $lineHeight;
   letter-spacing: $letterSpacing;
+  color: $color;
 }
 
-@mixin textPreset1() {
+@mixin textPreset1($color) {
   font-family: $fraunces;
-  @include textPreset(700, 3.2rem);
+  @include textPreset(700, 3.2rem, _, _, $color);
 }
 
-@mixin textPreset2() {
-  @include textPreset(700, 1.4rem, 110%);
+@mixin textPreset2($color) {
+  @include textPreset(700, 1.4rem, 110%, _, $color);
 }
 
-@mixin textPreset3() {
-  @include textPreset(500, 1.4rem, 160%);
+@mixin textPreset3($color) {
+  @include textPreset(500, 1.4rem, 160%, _, $color);
 }
 
-@mixin textPreset4() {
-  @include textPreset(500, 1.2rem, 120%, 0.05rem);
+@mixin textPreset4($color) {
+  @include textPreset(500, 1.2rem, 120%, 0.05rem, $color);
 }
 
-@mixin textPreset5() {
-  @include textPreset(500, 1.3rem, 120%);
+@mixin textPreset5($color) {
+  @include textPreset(500, 1.3rem, 120%, _, $color);
 }
